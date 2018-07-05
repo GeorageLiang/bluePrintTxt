@@ -1,0 +1,95 @@
+FORMAT: 1A
+
+# 提现接口文档
+
+提现相关接口
+## group 明细
+### 收入接口 [GET /luck/invite-center/m/ajax/withdraw-detail.htm]
++ Parameters
+	+ token 
+	+ type - 1(收入)
++ Response 200 (application/json)
+	{
+		"code": 0,
+		"message": "",
+		"data": {
+		    "incomes": {
+		        "2018-07-02": [
+		            {
+		                "uid": 1156510098,
+		                "bonus": 122,
+		                "eventName": "asd",
+		                "title": "asdsad",
+		                "type": 101,
+		                "gainDate": 1530496800000
+		            }
+		        ],
+		        "2018-05-23": [
+		            {
+		                "uid": 1156510098,
+		                "bonus": 21,
+		                "eventName": "阿斯达四大",
+		                "title": "阿萨斯大所多",
+		                "type": 100,
+		                "gainDate": 1527045965000
+		            }
+		        ]
+		    },
+		    "incomeTotal": 63
+		}
+	}
+
+### 提现接口 [GET /luck/invite-center/m/ajax/withdraw-detail.htm]
++ Parameters
+	+ token 
+	+ type - 2(提现)
++ Response 200 (application/json)
+	{
+	    "code": 0,
+	    "message": "",
+	    "data": {
+	        "draws": [
+	            {
+	                "id": 6,
+	                "phase": 0,
+	                "uid": 1156510098,
+	                "type": 2,
+	                "amount": 21,
+	                "charge": 2.1,
+	                "obtains": 18.9,
+	                "realName": "123",
+	                "aliPayAccount": "15111111111",
+	                "bankName": "",
+	                "bankCardNum": "",
+	                "state": 0,
+	                "comments": "",
+	                "createdTime": 1528959595000,
+	                "updatedTime": 1528959595000,
+	                "meta": {},
+	                "applying": true
+	            },
+	            {
+	                "id": 14,
+	                "phase": 0,
+	                "uid": 1156510098,
+	                "type": 2,
+	                "amount": 21,
+	                "charge": 2.1,
+	                "obtains": 18.9,
+	                "realName": "阿斯顿撒旦",
+	                "aliPayAccount": "15068807660",
+	                "bankName": "",
+	                "bankCardNum": "",
+	                "state": 0,
+	                "comments": "",
+	                "createdTime": 1527046104000,
+	                "updatedTime": 1527046104000,
+	                "meta": {},
+	                "applying": true
+	            }
+	        ],
+	        "withdrawalTotal": 42
+	    }
+	}
+
+	
