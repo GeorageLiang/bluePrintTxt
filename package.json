@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "trans": "aglio --theme-style default -i apib/index.apib -o apib/index.html -s",
-    "server":""
+    "server": "aglio --theme-style default -i apib/index.apib -o apib/index.html -s",
+    "trans":"aglio --theme-style default -i apib/index.apib -o apib/index.html"
   },
   "author": "",
   "license": "ISC"
